@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyLearn — Онлайн-школа Python для школьников</title>
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Py<span>Learn</span></a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span style="color:#fff;font-size:1.3rem">&#9776;</span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav mx-auto gap-1">
+                <li class="nav-item"><a class="nav-link" href="courses.html">Курсы</a></li>
+                <li class="nav-item"><a class="nav-link" href="teachers.html">Преподаватели</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.php">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="hero bg-image">
+    <div class="bg-image-overlay py-5">
+        <div class="container text-white">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-5">
+                    <p class="text-uppercase fw-semibold mb-3" style="color:#facc15;font-size:.8rem;letter-spacing:1.5px">Для школьников 8–17 лет</p>
+                    <h1>Учим <span>Python</span><br>с нуля до результата</h1>
+                    <p class="mt-3 mb-4">Онлайн-курсы программирования для детей и подростков. Практические проекты, обратная связь от преподавателя, сертификат по итогам.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="courses.html" class="btn btn-warning fw-bold px-4" style="color:#1e293b">Выбрать курс</a>
+                        <a href="contacts.php" class="btn btn-outline-light px-4">Бесплатный урок</a>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="terminal">
+                        <div class="terminal-bar">
+                            <div class="dot" style="background:#ff5f56"></div>
+                            <div class="dot" style="background:#ffbd2e"></div>
+                            <div class="dot" style="background:#27c93f"></div>
+                            <span style="color:#475569;font-size:.8rem;margin-left:6px">game.py</span>
+                        </div>
+                        <div class="terminal-body"><span class="cm"># Первый проект — игра «Угадай число»</span>
+        <span class="kw">import</span> random 
+        secret = random.randint(<span class="num">1</span>, <span class="num">100</span>)
+        attempts = <span class="num">0</span>
+        <span class="kw">while</span> <span class="kw">True</span>:
+        guess = <span class="fn">int</span>(<span class="fn">input</span>(<span class="st">"Введи число: "</span>))
+        attempts += <span class="num">1</span>
+        <span class="kw">if</span>   guess &lt; secret: <span class="fn">print</span>(<span class="st">"Больше"</span>)
+        <span class="kw">elif</span> guess &gt; secret: <span class="fn">print</span>(<span class="st">"Меньше"</span>)
+        <span class="kw">else</span>:
+        <span class="fn">print</span>(<span class="st">f"Верно! Попыток: {attempts}"</span>)
+        <span class="kw">break</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="border-bottom bg-white py-4">
+    <div class="container">
+        <div class="row text-center g-3">
+            <div class="col-6 col-md-3">
+                <div class="stat-num">3 200+</div>
+                <div class="stat-lbl">учеников</div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-num">15</div>
+                <div class="stat-lbl">курсов</div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-num">10</div>
+                <div class="stat-lbl">преподавателей</div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-num">96%</div>
+                <div class="stat-lbl">завершают курс</div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="fw-bold mb-2" style="font-size:1.6rem">Курсы</h2>
+        <p class="text-muted mb-4">Программа подобрана по возрасту и уровню подготовки.</p>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="course-card">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <h5>Python. Начало</h5>
+                        <span class="level-badge" style="background:#fef9c3;color:#854d0e">8–11 лет</span>
+                    </div>
+                    <p>Переменные, условия, циклы, функции. Итог — собственная мини-игра. Подготовка не нужна.</p>
+                    <div class="mt-4 d-flex justify-content-between align-items-center border-top pt-3">
+                        <span class="fw-bold text-success">Бесплатно</span>
+                        <a href="courses.html" class="btn btn-sm btn-outline-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <h5>Веб-разработка</h5>
+                        <span class="level-badge" style="background:#dbeafe;color:#1e40af">12–15 лет</span>
+                    </div>
+                    <p>Flask, HTML, CSS, базы данных. Создаём полноценный сайт с нуля. Нужны основы Python.</p>
+                    <div class="mt-4 d-flex justify-content-between align-items-center border-top pt-3">
+                        <span class="fw-bold">1 900 ₽ / мес</span>
+                        <a href="courses.html" class="btn btn-sm btn-outline-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-card">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <h5>Data Science и ИИ</h5>
+                        <span class="level-badge" style="background:#ede9fe;color:#6d28d9">15–17 лет</span>
+                    </div>
+                    <p>Анализ данных, машинное обучение, нейросети. Подготовка к ЕГЭ по информатике и олимпиадам.</p>
+                    <div class="mt-4 d-flex justify-content-between align-items-center border-top pt-3">
+                        <span class="fw-bold">2 500 ₽ / мес</span>
+                        <a href="courses.html" class="btn btn-sm btn-outline-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-3">
+            <a href="courses.html" class="btn btn-outline-secondary px-4">Все курсы</a>
+        </div>
+    </div>
+</section>
+<section class="py-5 bg-white">
+    <div class="container">
+        <h2 class="fw-bold mb-4" style="font-size:1.6rem">Как устроено обучение</h2>
+        <div class="row g-3">
+            <div class="col-md-3 col-6">
+                <div class="p-3 border rounded-3 h-100">
+                    <div class="fw-bold text-primary mb-2" style="font-size:1.3rem">01</div>
+                    <h6 class="fw-bold">Видеоуроки</h6>
+                    <p class="text-muted small mb-0">Короткие, по 10–15 минут. Доступны в любое время.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="p-3 border rounded-3 h-100">
+                    <div class="fw-bold text-primary mb-2" style="font-size:1.3rem">02</div>
+                    <h6 class="fw-bold">Задания</h6>
+                    <p class="text-muted small mb-0">Практика после каждого урока. Код пишем в браузере.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="p-3 border rounded-3 h-100">
+                    <div class="fw-bold text-primary mb-2" style="font-size:1.3rem">03</div>
+                    <h6 class="fw-bold">Проверка</h6>
+                    <p class="text-muted small mb-0">Преподаватель проверяет работы и отвечает на вопросы.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="p-3 border rounded-3 h-100">
+                    <div class="fw-bold text-primary mb-2" style="font-size:1.3rem">04</div>
+                    <h6 class="fw-bold">Итоговый проект</h6>
+                    <p class="text-muted small mb-0">Каждый курс заканчивается реальным проектом и сертификатом.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="fw-bold mb-4" style="font-size:1.6rem">Преподаватели</h2>
+        <div class="row g-4">
+            <div class="col-md-3 col-6">
+                <div class="d-flex gap-3 align-items-center">
+                    <div class="teacher-avatar" style="background:#2563eb">АК</div>
+                    <div>
+                        <div class="fw-bold" style="font-size:.95rem">Алексей Козлов</div>
+                        <div class="text-muted" style="font-size:.82rem">Python, Django</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="d-flex gap-3 align-items-center">
+                    <div class="teacher-avatar" style="background:#16a34a">МС</div>
+                    <div>
+                        <div class="fw-bold" style="font-size:.95rem">Мария Смирнова</div>
+                        <div class="text-muted" style="font-size:.82rem">Data Science, ML</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="d-flex gap-3 align-items-center">
+                    <div class="teacher-avatar" style="background:#ea580c">ДВ</div>
+                    <div>
+                        <div class="fw-bold" style="font-size:.95rem">Дмитрий Волков</div>
+                        <div class="text-muted" style="font-size:.82rem">Python, геймдев</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="d-flex gap-3 align-items-center">
+                    <div class="teacher-avatar" style="background:#7c3aed">ИН</div>
+                    <div>
+                        <div class="fw-bold" style="font-size:.95rem">Ирина Новикова</div>
+                        <div class="text-muted" style="font-size:.82rem">Flask, ЕГЭ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4">
+            <a href="teachers.html" class="btn btn-outline-secondary px-4">Все преподаватели</a>
+        </div>
+    </div>
+</section>
+<section class="py-5" style="background:var(--dark);color:#fff">
+    <div class="container">
+        <div class="row align-items-center gy-3">
+            <div class="col-md-8">
+                <h3 class="fw-bold mb-1">Первый урок — бесплатно</h3>
+                <p class="mb-0" style="color:rgba(255,255,255,.65)">Свяжитесь с нами и попробуйте без обязательств.</p>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <a href="contacts.php" class="btn btn-warning fw-bold px-4 py-2" style="color:#1e293b">Записаться</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="py-4">
+    <div class="container">
+        <div class="row align-items-center gy-2">
+            <div class="col-md-4">
+                <span class="footer-brand">PyLearn</span>
+                <span class="ms-2">— школа Python для школьников</span>
+            </div>
+            <div class="col-md-4 text-md-center d-flex gap-3 justify-content-md-center flex-wrap">
+                <a href="courses.html">Курсы</a>
+                <a href="teachers.html">Преподаватели</a>
+                <a href="contacts.php">Контакты</a>
+            </div>
+            <div class="col-md-4 text-md-end">© 2025 PyLearn</div>
+        </div>
+    </div>
+</footer>
+
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /php
+Disallow: /php/TextF.php
+Disallow: /bootstrap/
+
+Sitemap: https://pylearn.ru/sitemap.xml
